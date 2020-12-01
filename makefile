@@ -1,12 +1,13 @@
-CC= g++
+CC=clang++
 mpiCC= mpic++
 CFLAGS=  -Wno-write-strings -lfftw3
+OMPI_CXX=clang++
 
 MAINS_DIR= src/
 ATMO_DIR= src/atmo/
 GEOAC_DIR= src/geoac/
 UTILS_DIR= src/util/
-LDFLAGS= -L/Users/blumberg/anaconda3/envs/ncpaprop-conda/lib -I/Users/blumberg/anaconda3/envs/ncpaprop-conda/include
+LDFLAGS= -L/Users/wgblumbe/miniconda3/envs/py37/lib -I/Users/wgblumbe/miniconda3/envs/py37/include
 INSTALL_DIR= /usr/local/bin
 
 # Targets to build all of the standard methods and all of the accelerated methods
